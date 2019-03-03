@@ -89,6 +89,9 @@ Rails.application.configure do
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
 
+  config.web_socket_server_url = "wss://action-cable-example.herokuapp.com/cable"
+  config.action_cable.allowed_request_origins = ['https://action-cable-example.herokuapp.com', 'http://action-cable-example.herokuapp.com']
+  
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 end
