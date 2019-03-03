@@ -10,4 +10,4 @@ production:
   channel_prefix: talkomatic2_production
   host: tarpon.redistogo.com
   port: 10733
-  passwrd: ENV['REDISGO_PASSWORD']
+  password: ENV['REDISGO_PASSWORD']
