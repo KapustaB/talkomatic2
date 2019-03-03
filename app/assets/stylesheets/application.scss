@@ -22,8 +22,13 @@ body {
 }
 
 .full-height {
-  height: 100vh;
+  height: 85vh;
   overflow: hidden;
+
+  .chat-box {
+    height: 84vh;
+    overflow: scroll;
+  }
 }
 
 input.form-control.sidebar-form {
@@ -34,9 +39,8 @@ input.form-control.sidebar-form {
   border-radius: 0;
 }
 
-.chat-box {
-  height: 94vh;
-  overflow: scroll;
+.container-fluid {
+  padding-right: 0px;
 }
 
 .chat {
