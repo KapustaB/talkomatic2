@@ -1,3 +1,7 @@
-<li><%= link_to "Enter #{chat_room.topic}", chat_room_path(chat_room) %></li>
-
-
+<div class="card" style="width: 18rem; margin: 10px;">
+  <div class="card-body">
+    <h5 class="card-title"><%= chat_room.topic %></h5>
+    <h6 class="card-subtitle mb-2 text-muted"><%= chat_room.description  %></h6>
+    <a href="#" class="card-link"><%= link_to "Enter chat", chat_room_path(chat_room) %></a>
+  </div>
+</div>
