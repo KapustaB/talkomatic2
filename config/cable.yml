@@ -6,5 +6,8 @@ test:
 
 production:
   adapter: redis
-  url: redis://redistogo:195fc78167cc6164c7d35a49cfd60a16@tarpon.redistogo.com:10733/
+  url: ENV['REDISGO_URL']
   channel_prefix: talkomatic2_production
+  host: tarpon.redistogo.com
+  port: 10733
+  passwrd: ENV['REDISGO_PASSWORD']
